@@ -1,0 +1,24 @@
+The perl program prob.pl wraps RNAfold and RNAplfold from the Vienna package 
+to predict accessibility of a target RNA to a hybridizing short oligonucleotide. 
+The target RNA might be a mRNA, a viral RNA, or similar; the oligonucleotide 
+might be a DNAzyme, a siRNA, or similar.
+
+prob.pl reads a sequence file with an RNA sequence; supported formats are 
+FASTA, Vienna, GenBank, and EMBL. It then determines pairing probabilities 
+at a given temperature via RNAfold and RNAplfold. Pairing probabilities, 
+accessibility, and further information on the RNA are extracted from the 
+output of RNAfold and RNAplfold and written in CSV format if the accessible 
+regions of the RNA contain a site cleavable by a selected DNAzyme class. 
+Furthermore, a GLE script is written that uses the CSV file to create a 
+graphical representation of pairing probabilities, accessibility, and 
+position of cleavage sites.
+
+For execution, prob.pl needs a locally installed perl, RNAfold and RNAplfold.  
+For information on the Vienna package, which includes RNAfold and RNAplfold, 
+see https://www.tbi.univie.ac.at/RNA/
+
+For further information see:
+Steger G. & Victor J. (2021)
+Design of a DNAzyme: prediction of mRNA regions accessible to a DNAzyme.
+In: Rosenbach H., Span I. & Steger G. (eds) DNAzymes. Methods Mol. Biol.
+

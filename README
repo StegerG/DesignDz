@@ -16,6 +16,8 @@ position of cleavage sites.
 For execution, prob.pl needs a locally installed perl, RNAfold and RNAplfold.  
 For information on the Vienna package, which includes RNAfold and RNAplfold, 
 see https://www.tbi.univie.ac.at/RNA/
+For information on gle (Graphics Layout Engine) see:
+https://glx.sourceforge.io/
 
 For further information see:
 Steger G. & Victor J. (2021)
